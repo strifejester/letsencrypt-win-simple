@@ -2,23 +2,16 @@
 A Simple ACME Client for Windows
 
 # Overview
+This is a ACME windows CLI client built in native .net and aims to be as simple as possible to use. It's built on top of the [ACMESharp project](https://github.com/ebekker/ACMESharp).
 
-This is a ACME windows CLI client built in native .net and aims to be as simple as possible to use.
+# Running
+Download the [latest release](https://github.com/Lone-Coder/letsencrypt-win-simple/releases), unpack and run `letsencrypt.exe`, and follow the messages in the input prompt. There are some useful [command line arguments](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Command-Line-Arguments) which can help with advanced or unattended usage scenarios.
 
-It's built on top of the [.net ACME protocol library](https://github.com/ebekker/ACMESharp).
+# Settings
+Some of the applications' settings can be updated in the app's settings or configuration file. the file is in the application root and is called `letsencrypt.exe.config`. The settings are documented on [this page](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Application-Settings).
 
 # Wiki
-
 Please head to the [Wiki](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki) to learn more.
 
 # Support
-
-If you run into trouble please open an issue at https://github.com/Lone-Coder/letsencrypt-win-simple/issues
-
-Please check to see if your issue is covered in the [Wiki](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki) before you create a new issue.
-
-If you ran the app and you got an error when it tried to Authorize your site take a look [here](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/web.config).
-
-# Web.Config Pull Requests
-
-If you submit a pull request that changes the included web.config file and it does not work on stock IIS 7.5 +, it will not be merged in. Instead add a section to the [WIki page](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/web.config) with your changes.
+If you run into trouble please open an issue [here](https://github.com/Lone-Coder/letsencrypt-win-simple/issues). Please check to see if your issue is covered in the [Wiki](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki) before you create a new issue. Describe the exact steps you took and try to reproduce it while running with the `--verbose` command line option set. Post your command line and the console output to help us debug.
